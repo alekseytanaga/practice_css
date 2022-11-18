@@ -1,0 +1,9 @@
+.grid * {
+    padding: 10px 15px;
+    background-color: rgb(47, 98, 163);
+    border: 1px solid rgb(23, 76, 119);
+    text-align: center;
+    font-size: 22px;
+    font-family: sans-serif;
+    color: #fff;
+}
