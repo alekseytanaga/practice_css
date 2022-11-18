@@ -16,8 +16,19 @@
     /* grid-template-columns: minmax(100px, 400px) 100px 100px 100px; */
     /* grid-template-rows: 100px 100px 100px; */
     /* grid-template-rows: 100px minmax(100px, auto) 100px; */
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 100px 100px 100px;
+    /* grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 100px 100px;
+
+    grid-auto-rows: 200px;
+    grid-auto-columns: 100px;
     grid-auto-flow: column;
+    grid-gap: 30px; */
+
     grid-gap: 30px;
+}
+.auto-fill {
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+}
+.auto-fit {
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
 }
