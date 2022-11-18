@@ -12,7 +12,9 @@
     display: grid;
     /* grid-template-columns: 100px 200px 100px; */
     /* grid-template-columns: 2fr 1fr 1fr; */
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 100px 100px 100px;
+    /* grid-template-columns: repeat(5, 1fr); */
+    grid-template-columns: minmax(100px, 400px) 100px 100px 100px;
+    /* grid-template-rows: 100px 100px 100px; */
+    grid-template-rows: 100px minmax(100px, auto) 100px;
     grid-gap: 30px;
 }
