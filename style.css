@@ -1,3 +1,8 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 .grid * {
     padding: 10px 15px;
     background-color: rgb(47, 98, 163);
@@ -10,7 +15,24 @@
 
 .grid {
     display: grid;
-    
-    grid-template: repeat(3, 100px) / repeat(4, 150px);
-    grid-gap: 30px;
+    grid-gap: 20px;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 100px 3fr 100px;
+    grid-template-areas: 
+        "header header"
+        "aside main"
+        "aside footer";
+    height: 100%;
+}
+header {
+    grid-area: header;
+}
+aside {
+    grid-area: aside;
+}
+main {
+    grid-area: main;
+}
+footer {
+    grid-area: footer;
 }
