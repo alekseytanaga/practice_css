@@ -11,14 +11,6 @@
 .grid {
     display: grid;
     
-    grid-template-columns: 150px 150px 150px 150px;
-    grid-auto-rows: minmax(50px, auto);
+    grid-template: repeat(3, 100px) / repeat(4, 150px);
     grid-gap: 30px;
-
-    justify-items: start;
-    align-items: stretch;;
-}
-.grid > div:nth-child(6) {
-    justify-self: end;
-    align-self: center;
 }
